@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f1f1f1;
+    color: #333;
+  }
+  
+  .page {
+    padding: 20px;
+    padding-bottom: 80px; /* место под нижнюю навигацию */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .card-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  button {
+    padding: 10px 16px;
+    border: none;
+    background: #0088cc;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #0070aa;
+  }
+  
+  input, select {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .bottom-nav button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .bottom-nav button.active {
+    color: #0088cc;
+  }
+  
