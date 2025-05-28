@@ -8,41 +8,35 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <!-- Главная -->
-  <div id="main" class="page active">
-    <h1>Мои карточки</h1>
-    <section class="card-list">
-      <div class="card">📝 Сделать дизайн</div>
-      <div class="card">📦 Заказать доставку</div>
-      <div class="card">📞 Позвонить клиенту</div>
-    </section>
-    <button onclick="addCard()">+ Добавить карточку</button>
-  </div>
-
-  <!-- Настройки -->
-  <div id="settings" class="page hidden">
-    <h2>Настройки</h2>
-    <section class="settings-form">
-      <label>
-        Никнейм:
-        <input type="text" placeholder="Введите ник" />
-      </label>
-      <label>
-        Тема:
-        <select>
-          <option>Светлая</option>
-          <option>Тёмная</option>
-        </select>
-      </label>
-    </section>
-  </div>
-
-  <!-- Навигация -->
-  <nav class="bottom-nav">
-    <button onclick="showPage('main')" id="nav-main">🏠</button>
-    <button onclick="showPage('settings')" id="nav-settings">⚙️</button>
-  </nav>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <body>
+        <div id="main" class="page active">
+          <h1 class="title">Мои пространства</h1>
+      
+          <div class="space-card pink">
+            Мой список дел
+          </div>
+      
+          <div class="space-card green">
+            <div class="space-header">
+              Работа <span class="dot"></span>
+            </div>
+            <div class="avatars">
+              <div class="avatar avatar1"></div>
+              <div class="avatar avatar2"></div>
+              <span class="avatar-count">и еще 1</span>
+            </div>
+          </div>
+      
+          <div class="space-card empty">
+            <span class="plus">+</span>
+          </div>
+        </div>
+      
+        <nav class="bottom-nav">
+          <button class="nav-btn active">🏠</button>
+          <button class="nav-btn">⚙️</button>
+        </nav>
+      
+        <script src="script.js"></script>
+      </body>
+      

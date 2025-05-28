@@ -1,54 +1,86 @@
 body {
-    font-family: sans-serif;
+    font-family: -apple-system, sans-serif;
     margin: 0;
-    background: #f1f1f1;
-    color: #333;
-  }
-  
-  .page {
-    padding: 20px;
-    padding-bottom: 80px; /* место под нижнюю навигацию */
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .card-list {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .card {
-    padding: 15px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    padding-bottom: 90px;
   }
   
-  button {
-    padding: 10px 16px;
-    border: none;
-    background: #0088cc;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
+  .title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .space-card {
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
     font-size: 16px;
   }
   
-  button:hover {
-    background: #0070aa;
+  .space-card.pink {
+    background: #ffeaea;
   }
   
-  input, select {
-    margin-top: 5px;
-    padding: 8px;
-    width: 100%;
+  .space-card.green {
+    background: #f0ffe0;
+  }
+  
+  .space-card.empty {
     border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 20px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 28px;
+    border-radius: 16px;
+  }
+  
+  .space-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .avatars {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .avatar1 {
+    background: #999;
+  }
+  
+  .avatar2 {
+    background: #ccc;
+    margin-left: -10px;
+  }
+  
+  .avatar-count {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .plus {
+    font-size: 32px;
   }
   
   .bottom-nav {
@@ -56,23 +88,24 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background: white;
-    border-top: 1px solid #ccc;
+    background: #f8f8f8;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid #ccc;
   }
   
-  .bottom-nav button {
+  .nav-btn {
+    font-size: 24px;
     background: none;
     border: none;
-    font-size: 24px;
-    color: #666;
-    cursor: pointer;
+    color: #888;
   }
   
-  .bottom-nav button.active {
-    color: #0088cc;
+  .nav-btn.active {
+    color: black;
   }
   
